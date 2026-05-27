@@ -1,0 +1,11 @@
+{
+  "name": "explanatory-output-style",
+  "version": "1.0.0",
+  "description": "在会话中提供教育性的代码实现见解，帮助理解代码模式和设计决策",
+  "author": {
+    "name": "wusfe"
+  },
+  "license": "MIT",
+  "keywords": ["educational", "explanatory", "learning", "insights"],
+  "category": "development"
+}

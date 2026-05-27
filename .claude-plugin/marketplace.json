@@ -1,0 +1,86 @@
+{
+  "name": "free-sup",
+  "version": "1.0.0",
+  "description": "wusfe 的 Claude Code 插件市场",
+  "owner": {
+    "name": "wusfe",
+    "email": "wusfe@example.com"
+  },
+  "allowCrossMarketplaceDependenciesOn": [
+    "claude-plugins-official"
+  ],
+  "plugins": [
+    {
+      "name": "web-search",
+      "source": "./plugins/web-search",
+      "description": "联网搜索。多轮 WebSearch + WebFetch 提取高质量信息并给出引用。",
+      "version": "1.0.0",
+      "author": {
+        "name": "wusfe"
+      },
+      "license": "MIT",
+      "keywords": ["search", "web", "fetch"],
+      "category": "productivity"
+    },
+    {
+      "name": "find-plugin",
+      "source": "./plugins/find-plugin",
+      "description": "搜索 Claude Code 插件。按关键词在多个市场中查找匹配插件并给出安装命令。",
+      "version": "1.0.0",
+      "author": {
+        "name": "wusfe"
+      },
+      "license": "MIT",
+      "keywords": ["plugin", "search", "discovery", "marketplace"],
+      "category": "productivity"
+    },
+    {
+      "name": "wusfe-tools",
+      "source": "./plugins/wusfe-tools",
+      "description": "wusfe 常用工具集合。Python LSP 代码智能。",
+      "version": "1.0.0",
+      "author": {
+        "name": "wusfe"
+      },
+      "license": "MIT",
+      "keywords": ["python", "lsp", "tools"],
+      "category": "development"
+    },
+    {
+      "name": "plugin-forge",
+      "source": "./plugins/plugin-forge",
+      "description": "从外部市场搜索、评估并导入 Claude Code 插件到 free-sup 市场。支持搜索候选、改造格式、安全检查、提交 PR 的全流程。",
+      "version": "1.0.0",
+      "author": {
+        "name": "wusfe"
+      },
+      "license": "MIT",
+      "keywords": ["plugin", "import", "forge", "marketplace", "scaffold"],
+      "category": "productivity"
+    },
+    {
+      "name": "code-simplifier",
+      "source": "./plugins/code-simplifier",
+      "description": "简化并优化代码，提高清晰度、一致性和可维护性，同时保留所有功能。包含 Opus 模型驱动的 Agent，在代码编写后自动优化。",
+      "version": "1.0.0",
+      "author": {
+        "name": "wusfe"
+      },
+      "license": "MIT",
+      "keywords": ["simplify", "refactor", "code-quality", "readability"],
+      "category": "development"
+    },
+    {
+      "name": "explanatory-output-style",
+      "source": "./plugins/explanatory-output-style",
+      "description": "在会话中提供教育性的代码实现见解，帮助理解代码模式和设计决策。通过 SessionStart 钩子注入解释型输出指令。",
+      "version": "1.0.0",
+      "author": {
+        "name": "wusfe"
+      },
+      "license": "MIT",
+      "keywords": ["educational", "explanatory", "learning", "insights"],
+      "category": "development"
+    }
+  ]
+}
