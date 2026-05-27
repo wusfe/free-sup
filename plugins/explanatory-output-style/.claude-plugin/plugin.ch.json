@@ -1,7 +1,7 @@
 {
   "name": "explanatory-output-style",
   "version": "1.0.0",
-  "description": "Adds educational insights about implementation choices and codebase patterns (mimics the deprecated Explanatory output style)",
+  "description": "在代码编写前后提供教育性见解，解释实现选择和代码库模式（替代已弃用的 Explanatory 输出风格）",
   "author": {
     "name": "wusfe",
     "email": "wusfe@wusfe.com"
@@ -14,7 +14,7 @@
   "hooks": {
     "SessionStart": {
       "handler": "hooks-handlers/session-start.sh",
-      "description": "Injects explanatory mode instructions at session start"
+      "description": "在会话开始时注入解释模式指令"
     }
   }
 }

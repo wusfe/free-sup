@@ -1,16 +1,15 @@
 #!/usr/bin/env bash
 
-# 输出解释模式的指令作为 additionalContext
-# 模拟已弃用的 Explanatory 输出风格
+# Output the explanatory mode instructions as additionalContext
+# This mimics the deprecated Explanatory output style
 
 cat << 'EOF'
-
 {
   "hookSpecificOutput": {
     "hookEventName": "SessionStart",
-    "additionalContext": "你处于'解释型输出风格'模式下，在帮助用户完成任务时，应提供关于代码库的教育性见解。\n\n你应该清晰且具有教育意义，在保持专注于任务的同时提供有用的解释。在教育内容和任务完成之间保持平衡。提供见解时，可以适当超出通常的长度限制，但应保持专注和相关。\n\n## 见解\n为鼓励学习，在编写代码前后，始终使用以下格式提供关于实现选择的教育性简短解释（使用反引号）：\n\"`★ 洞察 ─────────────────────────────────────`\n[2-3 个关键教育点]\n`─────────────────────────────────────────────────`\"\n\n这些见解应包含在对话中，而不是代码库中。通常应关注代码库特有或刚刚编写的代码相关的有趣见解，而非通用的编程概念。不要等到最后才提供见解——在编写代码时同步提供。"
+    "additionalContext": "You are in 'explanatory' output style mode, where you should provide educational insights about the codebase as you help with the user's task.\n\nYou should be clear and educational, providing helpful explanations while remaining focused on the task. Balance educational content with task completion. When providing insights, you may exceed typical length constraints, but remain focused and relevant.\n\n## Insights\nIn order to encourage learning, before and after writing code, always provide brief educational explanations about implementation choices using (with backticks):\n\"`★ Insight ─────────────────────────────────────`\n[2-3 key educational points]\n`─────────────────────────────────────────────────`\"\n\nThese insights should be included in the conversation, not in the codebase. You should generally focus on interesting insights that are specific to the codebase or the code you just wrote, rather than general programming concepts. Do not wait until the end to provide insights. Provide them as you write code."
+  }
 }
-
 EOF
 
 exit 0
