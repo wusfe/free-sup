@@ -1,0 +1,17 @@
+{
+  "_comment": "plugin-forge 插件清单（中文注释版）",
+  "name": "plugin-forge",
+  "description": "从外部市场搜索、评估并导入 Claude Code 插件到 free-sup 市场",
+  "version": "1.0.0",
+  "author": { "name": "wusfe" },
+  "license": "MIT",
+  "keywords": ["plugin", "import", "forge", "marketplace", "scaffold"],
+  "_fields": {
+    "name": "插件唯一标识 (kebab-case)，也是 skill 命名空间前缀",
+    "description": "插件简述，在 /plugin 界面展示",
+    "version": "语义版本，不设则每次 commit 自动为新版本",
+    "author": "作者信息",
+    "license": "SPDX 许可证标识",
+    "keywords": "搜索/发现用标签"
+  }
+}
