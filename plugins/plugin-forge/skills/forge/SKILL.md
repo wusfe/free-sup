@@ -28,6 +28,8 @@ Ask: what functionality? Have a specific GitHub repo URL?
 
 Call Agent(search) to search marketplaces. Present candidates, let user pick.
 
+> **Important**: After selection, must proceed to adapt. Do NOT offer `/plugin install`. The goal is importing into free-sup marketplace, not installing.
+
 ### Step 3: Transform
 
 1. Call Agent(repo) for repository state
