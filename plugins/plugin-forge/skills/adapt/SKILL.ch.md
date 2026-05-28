@@ -87,8 +87,85 @@ WebFetch 源仓库：
 | hook | 适配路径变量 `${CLAUDE_PLUGIN_ROOT}` | `hooks/hooks.json` |
 | mcpServer | 适配路径变量 | `.mcp.json` 或写入 plugin.json |
 | lspServer | 适配路径变量 | `.lsp.json` 或写入 plugin.json |
-| README | 重写为中文使用场景 | `README.md` + `README.ch.md` |
+| README | 提取源信息 + 精简重写 | `README.md` + `README.ch.md` |
 | rules | 原样收藏 | `rules/<name>.md` + `<name>.ch.md` |
+
+**README 重写规则：**
+
+不要原封不动搬运源 README。提取关键信息，按 free-sup 风格精简：
+
+**README.md（英文）**：
+```markdown
+# <plugin-name>
+
+<一句话简介>
+
+## Install
+
+/plugin install <name>@free-sup
+
+## Usage
+
+### <skill-a-name> — <功能描述>
+
+说"<实际触发短语>" 或 `/plugin-name:skill-a`。
+
+示例：
+- 用户："<具体对话>" → Claude 会 <做什么>
+- 用户：`/plugin-name:skill-a <参数>` → Claude 会 <做什么>
+
+### <skill-b-name> — <功能描述>
+
+...
+
+> 每个 skill 单独一节，用真实可用的对话展示用法。
+
+### Agents（如有）
+
+### <agent-name> — <功能描述>
+
+被 Claude 在 <什么场景> 时自动调用，也可用 `/agent-name` 手动触发。
+
+### Hooks（如有）
+
+| 事件 | 行为 |
+|------|------|
+| PostToolUse (Write/Edit) | 自动执行 `script.sh` 检查 |
+
+### MCP / LSP 服务器（如有）
+
+安装后自动启动，无需手动操作。
+
+## Components
+
+| 类型 | 名称 | 说明 |
+|------|------|------|
+| skill | xxx | ... |
+| ... | ... | ... |
+
+## Source
+
+- 原始仓库：<url>
+- 原作者：<author>
+```
+> 规则：**所有元件（skill、agent、command、hook、mcpServer、lspServer）都必须有说明**。skill 用对话示例，hook/MCP/LSP 说明什么时候自动触发。
+
+**README.ch.md（中文）**：
+和 README.md 结构一致，所有内容用中文自然表述。在末尾追加来源信息：
+
+```markdown
+## 来源
+
+- 原始仓库：<url>
+- 原作者：<author>
+- 改造说明：基于源插件重新组织为 free-sup 格式，所有 .md 文件均提供中文版（.ch.md）
+```
+
+**规则**：
+- 不搬运源 README 的贡献指南、CI badge、版本历史等无关内容
+- 安装命令必须用 free-sup 的格式
+- 来源信息必须标注
+- 功能描述基于实际改造后的内容，不夸大类
 
 **内容重写规范**：
 

@@ -73,8 +73,21 @@ Required output files per component:
 | hook | Adapt path vars | hooks/hooks.json |
 | mcpServer | Adapt path vars | .mcp.json or plugin.json |
 | lspServer | Adapt path vars | .lsp.json or plugin.json |
-| README | Rewrite CN context | README.md + README.ch.md |
+| README | Extract + rewrite cleanly | README.md + README.ch.md |
 | rules | Archive as-is | rules/`<name>`.md + `<name>`.ch.md |
+
+**README rules**: Don't copy the source README verbatim. Extract key info and rewrite concisely in free-sup style:
+
+- **README.md**: Plugin name, one-line summary, install command. **Every component type must have usage docs**:
+  - skills: One section each with natural-language trigger phrases, slash commands, and concrete dialog examples
+  - agents: When Claude auto-invokes them, plus manual trigger command
+  - hooks: What event triggers them and what they do automatically
+  - MCP/LSP: Note they start automatically on install
+  - Component list with all types, names, and descriptions
+  - Source attribution
+- **README.ch.md**: Same structure in Chinese, with source info appended.
+- Strip CI badges, contribution guides, changelogs, and other irrelevant content from the source.
+- Feature descriptions must be based on actual transformed output, not inflated claims.
 
 ### 5. Output Preview
 
