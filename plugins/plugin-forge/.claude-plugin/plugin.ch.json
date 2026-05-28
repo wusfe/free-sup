@@ -2,7 +2,7 @@
   "_comment": "plugin-forge 插件清单（中文注释版）",
   "name": "plugin-forge",
   "description": "从外部市场搜索、评估并导入 Claude Code 插件到 free-sup 市场",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "author": { "name": "wusfe" },
   "license": "MIT",
   "keywords": ["plugin", "import", "forge", "marketplace", "scaffold"],

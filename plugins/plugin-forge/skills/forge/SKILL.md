@@ -8,6 +8,8 @@ origin: free-sup
 
 Triggered by "forge ..." prefixed requests. Automatically orchestrates: search → adapt → check → submit.
 
+**Core rule: The sole purpose is importing plugins into the free-sup marketplace. No matter what search returns, must follow the adapt → check → submit pipeline. NEVER suggest installing plugins.**
+
 ## Triggers
 
 - "forge find me a X plugin"
