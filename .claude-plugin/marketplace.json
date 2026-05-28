@@ -21,6 +21,18 @@
       "license": "MIT",
       "keywords": ["plugin", "import", "forge", "marketplace", "scaffold"],
       "category": "productivity"
+    },
+    {
+      "name": "claude-hud",
+      "source": "./plugins/claude-hud",
+      "description": "Claude Code 实时状态栏 HUD — 上下文健康度、工具活动、子代理追踪、任务进度，支持中文界面",
+      "version": "1.0.0",
+      "author": {
+        "name": "wusfe"
+      },
+      "license": "MIT",
+      "keywords": ["hud", "monitoring", "statusline", "context", "tools", "agents", "todos"],
+      "category": "statusline"
     }
   ]
 }
