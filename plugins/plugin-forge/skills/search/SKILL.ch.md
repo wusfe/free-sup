@@ -21,18 +21,18 @@ origin: free-sup
 
 先问清楚：
 - 用户想要什么功能
-- 有无偏好来源（默认优先 `affaan-m/everything-claude-code`）
+- 有无偏好来源（默认优先 GitHub 搜索）
 - 是否是中文用户场景
 
 ### 阶段 2：搜索
 
 按优先级搜索：
 
-1. `affaan-m/everything-claude-code`（最高优先级）— WebFetch 获取 README
-2. `anthropics/claude-plugins-official` — WebFetch 获取仓库列表
-3. `ComposioHQ/awesome-claude-plugins` — WebFetch 获取 README
-4. `gupsammy/Claudest` — WebFetch 获取 README
-5. GitHub 通用搜索 — WebSearch: `claude-code-plugin` + 关键词
+1. GitHub 通用搜索（最高优先级）— WebSearch: `claude-code-plugin` + 关键词、`"claude code" plugin <关键词> github`
+2. `affaan-m/everything-claude-code` — WebFetch 获取 README
+3. `anthropics/claude-plugins-official` — WebFetch 获取官方插件
+4. `ComposioHQ/awesome-claude-plugins` — WebFetch 获取 README
+5. `gupsammy/Claudest` — WebFetch 获取 README
 
 **聚合仓库**（README 是 Awesome List 格式、目录下有多个插件目录）：从列表中匹配符合需求的插件，标注每个的类型（skill / agent / hook / mcp / lsp）。
 

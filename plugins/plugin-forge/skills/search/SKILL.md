@@ -25,11 +25,11 @@ Clarify: what functionality, any preferred source (default priority: `affaan-m/e
 
 Priority order:
 
-1. `affaan-m/everything-claude-code` (highest) — WebFetch README
-2. `anthropics/claude-plugins-official` — WebFetch repo listing
-3. `ComposioHQ/awesome-claude-plugins` — WebFetch README
-4. `gupsammy/Claudest` — WebFetch README
-5. General GitHub search — WebSearch: `claude-code-plugin` + keywords
+1. General GitHub search (highest) — WebSearch: `claude-code-plugin` + keywords, `"claude code" plugin <keyword> github`
+2. `affaan-m/everything-claude-code` — WebFetch README
+3. `anthropics/claude-plugins-official` — WebFetch repo listing
+4. `ComposioHQ/awesome-claude-plugins` — WebFetch README
+5. `gupsammy/Claudest` — WebFetch README
 
 **Collection repos** (README in Awesome List format): match relevant plugins from the list, label each with component type (skill/agent/hook/mcp/lsp).
 
