@@ -1,0 +1,41 @@
+{
+  "name": "claude-hud",
+  "description": "Real-time statusline HUD for Claude Code - context health, tool activity, agent tracking, and todo progress",
+  "description_zh": "Claude Code 实时状态栏 HUD - 上下文健康度、工具活动、Agent 跟踪和待办进度",
+  "version": "1.0.0",
+  "author": {
+    "name": "wusfe",
+    "url": "https://github.com/wusfe"
+  },
+  "source": {
+    "name": "Jarrod Watts",
+    "url": "https://github.com/jarrodwatts/claude-hud"
+  },
+  "commands": [
+    "./commands/setup.md",
+    "./commands/configure.md"
+  ],
+  "homepage": "https://github.com/jarrodwatts/claude-hud",
+  "repository": "https://github.com/jarrodwatts/claude-hud",
+  "license": "MIT",
+  "keywords": ["hud", "monitoring", "statusline", "context", "tools", "agents", "todos", "claude-code"],
+  "keywords_zh": ["hud", "监控", "状态栏", "上下文", "工具", "代理", "待办", "claude-code"],
+  "requirements": {
+    "claudeCode": ">=1.0.80",
+    "node": ">=18.0.0"
+  },
+  "components": {
+    "commands": [
+      {
+        "name": "setup",
+        "description": "Detect platform, generate statusline command, backup settings, and apply HUD configuration",
+        "description_zh": "检测平台、生成状态栏命令、备份设置并应用 HUD 配置"
+      },
+      {
+        "name": "configure",
+        "description": "Guided configuration flow for HUD display options, presets, and language",
+        "description_zh": "引导式配置流程，用于 HUD 显示选项、预设和语言设置"
+      }
+    ]
+  }
+}

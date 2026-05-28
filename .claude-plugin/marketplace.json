@@ -1,6 +1,6 @@
 {
   "name": "free-sup",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "wusfe 的 Claude Code 插件市场",
   "owner": {
     "name": "wusfe",
@@ -21,6 +21,18 @@
       "license": "MIT",
       "keywords": ["plugin", "import", "forge", "marketplace", "scaffold"],
       "category": "productivity"
+    },
+    {
+      "name": "claude-hud",
+      "source": "./plugins/claude-hud",
+      "description": "Real-time statusline HUD for Claude Code - 实时显示上下文健康度、工具活动、Agent 跟踪和待办进度。支持中文.",
+      "version": "1.0.0",
+      "author": {
+        "name": "wusfe"
+      },
+      "license": "MIT",
+      "keywords": ["hud", "statusline", "monitoring", "context", "tools", "agents"],
+      "category": "monitoring"
     }
   ]
 }
